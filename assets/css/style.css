@@ -170,7 +170,7 @@ html {
 }
 
 body {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 p,
@@ -191,18 +191,18 @@ input {
     font-family:  "Noto Sans TC", sans-serif;
 }
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
-}
+}*/
 
 p {
-    font-size: 1em;
-    line-height: 1.42;
+    font-size: 1.5em;
+    line-height: 1.7;
 }
 
 h1 {
@@ -211,8 +211,9 @@ h1 {
 }
 
 h2 {
-    font-size: 3.375em;
-    font-weight: 400;
+    font-size: 2em;
+    font-weight: 300;
+    color: #777777;
 }
 
 h2.small-heading {
@@ -260,15 +261,48 @@ h2.small-heading:before {
 }
 
 h3 {
-    font-size: 2.25em;
-    font-weight: 400;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 body {
     overflow-x: hidden;
 }
 
+.item-bullet {
+    position: static;
+}
 
+.item-bullet:before {
+    content: ' ';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin-top: 10px;
+    margin-left: .5px;
+    z-index: 1;
+}
+
+.item-bullet:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #979797;
+    display: block;
+    margin-left: 4.5px;
+    top: 10px;
+    z-index: 0;
+    position: absolute;
+}
+
+@media (min-width: 34em){
+    .item-bullet {
+        margin-left: -21px;
+    }
+}
 
 /*-----------------------------------
    Index Page (Showcase Page)
@@ -440,6 +474,10 @@ body {
     .showcase-header p {
         font-size: 17px;
         max-width: 500px;
+    }
+
+    .faq-desc-item{
+        min-height: 340px;
     }
 }
 
@@ -724,13 +762,14 @@ body {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    left: 10%;
+    left: 13%;
     transform-origin: left;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
     -o-transform-origin: left;
-    bottom: 40%;
+    bottom: 41%;
+    width: max-content;
 }
 
 .main-heading h1 {
@@ -881,7 +920,13 @@ body {
 /*---------  service-flip------------------*/
 
 .faq-desc-item {
-    margin: 15px 10px;
+    margin: 20px 10px;
+}
+
+.btn-item {
+    margin: 20px 10px;
+    font-size: 1.3rem;
+    padding: 1px;
 }
 
 .flip-container {
@@ -892,7 +937,7 @@ body {
 .flip-container,
 .flipper {
     height: auto;
-    min-height: 350px;
+    min-height: 44vh;
 }
 
 .flipper {
@@ -931,7 +976,6 @@ body {
 
 .front {
     z-index: 2;
-    background-color: #f4f4f4;
     width: 100%;
 }
 
@@ -957,8 +1001,7 @@ body {
     -webkit-transform: rotateY(-180deg);
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
-    transform: rotateY(-180deg);  
-    background-color: #f4f4f4;
+    transform: rotateY(-180deg);
 }
 
 .back h5 {
@@ -1126,7 +1169,7 @@ body {
 }
 
 .projet-items {
-    padding: 20px;
+    padding: 1px;
 }
 
 
@@ -1200,7 +1243,7 @@ body {
 /*----- Hover Effect Portfolio Image [ END ] --------*/
 
 .popup-content {
-    background-color: #fff;
+    /*background-color: #000;*/
     position: relative;
     padding: 25px;
 }
@@ -1223,7 +1266,7 @@ body {
 }
 
 .mfp-content .mfp-close {
-    color: #000;
+    color: #cecccc;
     right: 29%;
 }
 
@@ -1344,19 +1387,19 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .contact-info .data i {
-    background: #C78443;
+    /* background: #C78443; */
     border-radius: 50%;
-    border: 1px solid #C78443;
-    color: #ffffff;
+    /* border: 1px solid #C78443; */
+    color: #a0a0a0;
     font-size: 25px;
     height: 60px;
     line-height: 60px;
-    margin-right: 20px;
-    text-align: center;
+    margin-right: 0px;
+    /* text-align: center; */
     width: 60px;
 }
 
@@ -1365,8 +1408,11 @@ body {
 }
 
 .contact-info .data:first-child span {
-    padding-top: 7px;
+    padding-top: 13px;
+    color: #f3f3f3;
+    font-size: 1.3em;
 }
+
 
 
 /* =-=--=-=-=-=-=-==-=-=-=- contact Form  =-=-=-=-==-=-==-====-==-=- */
@@ -1376,9 +1422,9 @@ body {
 }
 
 .form-control {
-    background-color: #f9f9f9;
+    background-color: #000000;
     border: 1px solid #E0E0E0;
-    border-radius: 0px;
+    border-radius: 1em;
     box-shadow: none;
     height: auto;
     padding: 14px 28px;
@@ -1420,13 +1466,13 @@ body {
 }
 
 button#cfsubmit {
-    background-color: transparent;
+    background-color: #a17643;
     border: 1px solid #C78443;
-    border-radius: 0px;
-    color: #C78443;
+    color: #000000;
     box-shadow: none;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    border-radius: 1em;
 }
 
 button#cfsubmit:hover {
@@ -1453,30 +1499,31 @@ button#cfsubmit:hover {
 
 .footer {
     padding: 20px 0px 10px 0px;
+    margin-top: 12px;
 }
 
 .profile-page .footer {
-    background-color: #01213B;
+    background-color: #171717;
 }
 
 .portfolio-page .footer {
-    background-color: #004824;
+    background-color: #171717;
 }
 
 .service-page .footer {
-    background-color: #761616;
+    background-color: #171717;
 }
 
 .gallery-page .footer {
-    background-color: rgba(42, 56, 98, 0.93);
+    background-color: #171717;
 }
 
 .faq-page .footer {
-    background-color: #3c2d50;
+    background-color: #171717;
 }
 
 .contact-page .footer {
-    background-color: #935B25;
+    background-color: #171717;
 }
 
 .footer .copyright {
@@ -1501,7 +1548,7 @@ button#cfsubmit:hover {
 }
 
 .contact-page .footer a {
-    color: #F1AD5C;
+    color: #5F9EA0;
 }
 
 .footer a:hover {
@@ -1518,6 +1565,30 @@ button#cfsubmit:hover {
 
     .main-heading h1{
         font-size: 45px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px){
+    .flip-container{
+        min-height: 0vh;
+    }
+    .faq-desc-item {
+        min-height: 16vh;
+    }
+
+    .introduction{
+        width: 100% !important;
+        height: 50% !important;
+        top: 0px !important;
+    }
+
+    .menu{
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .image_logo_intro .intro-content {
+        top:0%;
     }
 }
 
@@ -1544,10 +1615,20 @@ button#cfsubmit:hover {
     .main-heading h1{
         font-size: 35px;
     }
+
+
 }
 
+@media (max-width: 1024px) {
+
+
+}
 
 @media (max-width: 767px){
+
+    .mov-f{
+        margin-top: 5em;
+    }
 
     .introduction{
         text-align: center;
@@ -1560,7 +1641,7 @@ button#cfsubmit:hover {
     }
 
     .image_logo_intro .intro-content{
-        top: 0%;
+        top: 10%;
     }
 
     .introduction img.logo {
