@@ -1,4 +1,4 @@
-# artminda.github.io
+# artminda web
 Personal image website
 
 ## Online Demo
