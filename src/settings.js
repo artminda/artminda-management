@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue Element Admin',
+  title: 'artminda management',
 
   /**
    * @type {boolean} true | false

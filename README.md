@@ -1,6 +1,6 @@
-# artminda web
-Personal image website
+# artminda management system
+Personal management system
 
 ## Online Demo
 
-[Preview](https://artminda.github.io/artminda)
+[Preview](https://artminda.github.io/artminda-management)

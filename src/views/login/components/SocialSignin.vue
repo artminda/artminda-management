@@ -2,7 +2,7 @@
   <div class="social-signup-container">
     <div class="sign-btn" @click="handleClipboard('doai10007118@gmail.com',$event)">
       <span class="wx-svg-container"><svg-icon icon-class="email" class="icon" /></span>
-      doai10007118@gmail.com <br>(點擊可複製)
+      doai10007118@gmail.com <br>(click to copy)
     </div>
   </div>
 </template>

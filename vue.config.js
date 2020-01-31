@@ -6,7 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = defaultSettings.title || 'vue Element Admin' // page title
+const name = defaultSettings.title || 'artminda management' // page title
 
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
@@ -25,7 +25,7 @@ module.exports = {
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/artminda/'
+    ? '/artminda-management/'
     : '/',
   outputDir: 'dist',
   assetsDir: 'static',
