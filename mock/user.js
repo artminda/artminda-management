@@ -12,13 +12,13 @@ const users = {
   'admin-token': {
     roles: ['admin'],
     introduction: 'I am a super administrator',
-    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    avatar: 'https://cf.shopee.tw/file/e276eb1181658e1adc300cf3e9e564ec_tn',
     name: 'Super Admin'
   },
   'editor-token': {
     roles: ['editor'],
     introduction: 'I am an editor',
-    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    avatar: 'https://rukminim1.flixcart.com/image/1664/1664/jidg9zk0/art-craft-kit/s/3/c/artminds-pink-mini-glue-gun-artminda-original-imaf66j53xjfzf7e.jpeg',
     name: 'Normal Editor'
   }
 }
