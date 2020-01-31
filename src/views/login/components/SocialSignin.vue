@@ -1,22 +1,23 @@
 <template>
   <div class="social-signup-container">
-    <div class="sign-btn" @click="wechatHandleClick('wechat')">
-      <span class="wx-svg-container"><svg-icon icon-class="wechat" class="icon" /></span>
-      WeChat
-    </div>
-    <div class="sign-btn" @click="tencentHandleClick('tencent')">
-      <span class="qq-svg-container"><svg-icon icon-class="qq" class="icon" /></span>
-      QQ
+    <div class="sign-btn" @click="handleClipboard('doai10007118@gmail.com',$event)">
+      <span class="wx-svg-container"><svg-icon icon-class="email" class="icon" /></span>
+      doai10007118@gmail.com <br>(點擊可複製)
     </div>
   </div>
 </template>
 
 <script>
+import clipboard from '@/utils/clipboard'
 // import openWindow from '@/utils/open-window'
 
 export default {
   name: 'SocialSignin',
   methods: {
+    handleClipboard(text, event) {
+      console.log(text, event)
+      clipboard(text, event)
+    },
     wechatHandleClick(thirdpart) {
       alert('ok')
       // this.$store.commit('SET_AUTH_TYPE', thirdpart)

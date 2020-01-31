@@ -1,6 +1,6 @@
 
 const tokens = {
-  admin: {
+  artminda: {
     token: 'admin-token'
   },
   editor: {
